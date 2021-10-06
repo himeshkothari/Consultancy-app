@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-left">
+    <img class="w3-display-container w3-right" src="../images/consultant service.JPG" width="400" height="500" style="width:50%">
+    <div class="w3-display-container w3-left" style="width:45%">
+      <h3>Consultancy</h3>
+      <p><b>Our management consulting services focus on our clients' most critical issues and opportunities: strategy, marketing, organization, operations, technology, transformation, digital, advanced analytics, corporate finance, mergers & acquisitions and sustainability across all industries and geographies. We bring deep, functional expertise, but are known for our holistic perspective: we capture value across boundaries and between the silos of any organization. We have proven a multiplier effect from optimizing the sum of the parts, not just the individual pieces.</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-left">
+    <img class="w3-display-container w3-right" src="../images/Increase-customer-satisfaction.jpg" width="400" height="500" style="width:50%">
+    <div class="w3-display-container w3-left" style="width:45%">
+      <h3>Customer Satisfaction</h3>
+      <p><b>Taking care of customers has always been crucial to business success. In fact, stock experts have found that brand loyalty is the most reliable aspect in predicting a company’s performances in both short and long-term futures.</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-left">
+    <img class="w3-display-container w3-right" src="../images/quality.jpg" width="400" height="500" style="width:50%">
+    <div class="w3-display-container w3-left" style="width:45%">
+      <h3>Quality deliverables</h3>
+      <p><b>One of the key principles of project quality management is that quality is planned in, not inspected in. Planning for quality is more cost-effective than inspecting work results and doing the work over, or correcting problems to adhere to quality demands</b></p>   
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+</script>
+
+</body>
+</html>
